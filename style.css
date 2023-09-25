@@ -1,0 +1,156 @@
+*{
+    color:rgb(255, 251, 243); 
+    box-sizing: border-box;
+}
+.background{
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    min-height: 100hv;
+    background-size: cover;
+    background-image: radial-gradient(ellipse,rgb(74, 74, 241),rgb(25, 25, 168));
+}
+
+.todo{
+    text-align: center;
+    width: 500px;
+    border-radius: 20px;
+    border-width: 10px;
+    border-color: rgb(0, 0, 139);
+    border-style: solid;
+    padding: 15px;
+    margin: 100px;
+}
+
+ul{
+    margin: 15px;
+    list-style-type: none;
+    padding-left: 0;
+    border-top: 5px black;
+}
+
+li{
+    margin-bottom: 10px;
+    min-height: 40px;
+    padding: 4px 0;
+    border-radius: 20px;
+    border: 4px solid rgb(26, 26, 139);
+    width: 100%;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 17px;
+    transform: scale(1);
+    transition-duration: 500ms;
+    background-color: rgb(39, 39, 195);
+}
+
+li:hover{
+    transform: scale(1.1);
+    transition-duration: 500ms;
+}
+
+h2{
+    border-radius: 8px;
+    border-color: rgb(0, 0, 139);
+    border-style: solid;
+    background-color: rgb(39, 59, 238);
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    transform:skew(0,0);
+    transition-duration: 500ms;
+}
+
+h2:hover{
+    transform:skew(10deg, 10deg);
+    transition-duration: 500ms;
+}
+
+input{
+    font-size: 20px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    border: none;
+    font-family: inherit;
+    background-color: rgb(35, 35, 187);
+    border-radius: 5px;
+    color: aliceblue;
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.16);
+    transition-duration: 500ms;
+    transform: scale(1);
+}
+
+input::placeholder{
+    color: antiquewhite;
+}
+input::after{
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.16);
+    transition-duration: 500ms;
+}
+
+input:focus{
+    border: none;
+    outline: none;
+    transition-duration: 500ms;
+    transform: scale(1.1);
+    box-shadow:0 0 15px 4px rgba(0,0,0,0.3);
+}
+
+.btn{
+    border:none;
+    outline: none;
+    font-size: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+    font-family: inherit;
+    background-color: rgb(35, 35, 187);
+    border-radius: 5px;
+    border-color: rgb(0, 0, 150);
+    color: aliceblue;
+    transition-duration: 500ms;
+    transform: scaleX(1);
+}
+
+.deleteBtn{
+    margin: 0 10px;
+    border:none;
+    outline: none;
+    font-size: 15px;
+    display: inline;
+    float: right;
+    text-align: center;
+    font-family: inherit;
+    background-color: rgb(35, 35, 187);
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: rgb(86, 117, 238);
+    border-style: solid;
+    color: aliceblue;
+    transition-duration: 500ms;
+    transform: scaleX(1);
+}
+
+.btn:hover, .deleteBtn:hover{
+    outline: none;
+    transition-duration: 500ms;
+    transform: scaleX(1.1);
+}
+
+.btn:active, .deleteBtn:active{
+    transition-duration: 500ms;
+    transform: scaleX(0.9);
+}
